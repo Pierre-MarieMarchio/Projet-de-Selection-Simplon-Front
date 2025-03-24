@@ -57,6 +57,7 @@ Before you begin, ensure you have the following installed on your machine:
 ## Project Structure
 
 - `src/`: Contains the source code for the React application.
+  - `main.tsx`: Entry point for the React application.
   - `app`: Contains the application-related code.
     - `components/`: Reusable UI components.
     - `hooks/`: Reusable custom hooks.
@@ -64,7 +65,7 @@ Before you begin, ensure you have the following installed on your machine:
     - `layout/`: Layout components.
     - `pages/`: Page components.
     - `App.tsx`: The main application component.
-    - `index.tsx`: Entry point for the React application.
+  - `assets/`: Application assets.
 - `public/`: Static assets and the HTML template.
 - `vite.config.ts`: Vite configuration file.
 
