@@ -5,11 +5,11 @@ import { LandingPage } from "./pages/landing.page";
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <HeaderLayout />
       <LandingPage />
       <FooterLayout />
-    </>
+    </div>
   );
 }
 

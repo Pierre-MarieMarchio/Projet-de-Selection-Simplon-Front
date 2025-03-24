@@ -1,0 +1,16 @@
+.presentation-banner-container {
+  position: relative;
+}
+
+.presentation-text-container {
+  background-color: white;
+  width: 100%;
+  padding: 6rem 0 8rem 0;
+  transform: translateY(-20%);
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+}
+
+.presentration-title {
+    margin: 1rem 1rem 5rem 1rem;
+}
+

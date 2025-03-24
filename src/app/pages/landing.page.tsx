@@ -3,9 +3,9 @@ import { PresentationBanner } from "../components/presentation-banner/presentati
 
 export const LandingPage = () => {
   return (
-    <>
+    <div className="page">
       <PresentationBanner />
       <BlaguesComponet />
-    </>
+    </div>
   );
 };

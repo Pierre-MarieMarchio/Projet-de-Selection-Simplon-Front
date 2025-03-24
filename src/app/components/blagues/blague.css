@@ -1,0 +1,41 @@
+.blague-container {
+
+  padding-bottom: 10rem;
+}
+
+.blague-button {
+  padding: 1rem 1.6rem;
+  margin-bottom: 3rem;
+  border: 4px solid #e62c1c;
+  transition: ease-in-out 0.3s;
+  background-color: transparent;
+  color: #e62c1c;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.blague-button:hover {
+  transform: scale(1.2) rotate(10deg);
+  background-color: #e62c1c;
+  color: white;
+}
+
+
+.spinner {
+  border: 0.25rem solid #f3f3f3;
+  border-top: 0.25rem solid #3498db;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

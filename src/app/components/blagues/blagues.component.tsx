@@ -1,3 +1,4 @@
+import "./blague.css"
 import { useFetch } from "../../hooks/useFetch";
 import { Blague } from "../../interfaces/Blague.interface";
 
@@ -12,25 +13,31 @@ export const BlaguesComponet = () => {
   };
 
   return (
-    <section>
-      <div>
-        <h2>Découvrez une blague Carambar !</h2>
-        <p>
-          Cliquez sur le bouton pour afficher une blague. Préparez-vous à rire !
-        </p>
+    <section className="container direction-col blague-container ">
+      <div className="container">
+        <button
+          className="blague-button  "
+          onClick={() => handleClick()}
+          disabled={loading}
+        >
+          Rire garanti
+        </button>
+        {loading && <div className="spinner"></div>}
+        {error && (
+          <div>
+            <p className="title-black">OUUUPS ! Une erreur c'est produite !</p>
+            <p>
+              Ressayer plus tard. Si l'erreur persiste veuillez nous contacter{" "}
+            </p>
+          </div>
+        )}
+        {!error && data && (
+          <div className="container">
+            <p className="text-primary-imp m-1">{data.question}</p>
+            <p className="text-primary">{data.response}</p>
+          </div>
+        )}
       </div>
-
-      <button onClick={() => handleClick()} disabled={loading}>
-        bouton
-      </button>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
-      {data && (
-        <div>
-          <p>{data.question}</p>
-          <p>{data.response}</p>
-        </div>
-      )}
     </section>
   );
 };
